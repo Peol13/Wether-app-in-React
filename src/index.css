@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  padding: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+p {
+  margin: 10px 0;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 0 30px;
+}
+
+.App:before {
+  content: "";
+  background: url("https://images.unsplash.com/photo-1601488420524-8422830ae415?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80")
+    no-repeat center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.App-header {
+  text-align: center;
+}
+input {
+  margin-top: 20px;
+  height: 30px;
+  border-radius: 25px;
+  border: 1px solid;
+  width: 130px;
+}
+button {
+  margin-top: 10px;
+  height: 30px;
+  border-radius: 25px;
+  height: 30px;
+  border-radius: 25px;
+  border: 1px solid;
+}
+
+.State-list {
+  height: 310px;
+  width: 200px;
+  overflow: auto;
+  text-align: center;
+  border-radius: 25px;
+  background-color: white;
+  opacity: 0.6;
+  font-weight: 600;
+
+}
+
+.State-list li {
+  list-style-type: none;
+  font-size: 22px;
+}
+.State-list li:hover {
+  background-color: aquamarine;
+  cursor: pointer;
+  color: blue;
+  border-radius: 25px;
+}
+.City {
+  font-size: 1.5rem;
+  margin: 5px 0;
+  position: absolute;
+  top: 50px;
+  font-weight: 600;
+}
+.Left-info {
+  border: 1px solid;
+  height: 100%;
+  width: 100px;
+  padding-left: 10px;
+  background-color: white;
+  opacity: 0.6;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  font-weight: 600;
+}
+.Right-info {
+  border: 1px solid;
+  text-align: end;
+  height: 100%;
+  width: 200px;
+  padding-right: 10px;
+  margin-right: 6px;
+  background-color: white;
+  opacity: 0.6;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  font-weight: 600;
+}
+.Main-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.Main-container div:nth-of-type(1) {
+  width: 200px;
+}
+.Main-container div:nth-of-type(3) {
+  width: 200px;
+  text-align: end;
+}
+.Footer {
+  position: absolute;
+  bottom: 5px;
+  left: -5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Footer div:nth-of-type(1) {
+  text-align: center;
+  width: 160px;
+  background-color: white;
+  opacity: 0.6;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  font-weight: 600;
+}
+
+.Footer div:nth-of-type(2) {
+  text-align: center;
+  width: 160px;
+  background-color: white;
+  opacity: 0.6;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  font-weight: 600;
+}
+.Footer div:nth-of-type(3) {
+  text-align: center;
+  width: 160px;
+  background-color: white;
+  opacity: 0.6;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 480px) {
+  .App {
+    padding: 2px;
+  }
+  .Footer {
+    left: 0;
+  }
+   .State-list {
+ 
+    height: 150px;
+  } 
+  .Right-info,
+  .Left-info {
+    height: 120%;
+  }
+
+  .Main-container {
+    height: 100px;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .Temp {
+    font-size: 1rem;
+  }
+  .ShowStatesList {
+    margin-top: 40px;
+  }
+
+  .State-list li {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .Right-info,
+  .Left-info {
+    height: 140%;
+  }
+
+}
